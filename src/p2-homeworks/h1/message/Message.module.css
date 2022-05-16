@@ -1,0 +1,56 @@
+.Messages {
+    display: flex;
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.messagesBox {
+    background-color: gray;
+    min-width: 300px;
+    border-radius: 10px 10px 10px 0;
+    padding: 10px;
+}
+
+.bg {
+    background-color: grey;
+}
+
+.userPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: greenyellow;
+    height: 100%;
+    border-radius: 0 0 10px 0;
+}
+
+.bg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 5px 5px 0 0;
+}
+
+p a {
+    text-decoration: none;
+    color: blueviolet;
+    padding-bottom: 10px;
+}
+
+.messagesBox p {
+    margin: 0;
+    color: white;
+}
+
+
+.messagesBox span {
+    vertical-align: sub;
+    font-size: 0.7rem;
+    margin-left: 10px;
+    float: right;
+    color: white;
+}
+
+
+
+
