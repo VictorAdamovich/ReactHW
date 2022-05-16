@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactHW/static/css/main.dc933fc4.css",
+    "main.js": "/ReactHW/static/js/main.b3850bdf.js",
+    "index.html": "/ReactHW/index.html",
+    "main.dc933fc4.css.map": "/ReactHW/static/css/main.dc933fc4.css.map",
+    "main.b3850bdf.js.map": "/ReactHW/static/js/main.b3850bdf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc933fc4.css",
+    "static/js/main.b3850bdf.js"
+  ]
+}
