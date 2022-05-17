@@ -1,0 +1,38 @@
+.HeaderNavi {
+    align-items: center;
+    position: relative;
+    right: 280px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.HeaderNavi:hover{
+    right: 0;
+}
+
+.HeaderNavi_item {
+    margin: 5px 5px;
+    padding: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+}
+
+.HeaderNavi_item:hover {
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
+    background-color: rgba(155, 155, 155, 0.67);
+}
+
+.box {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    margin-left: 20px;
+}
+
+.HeaderNavi:hover box{
+    background-color: green;
+}
