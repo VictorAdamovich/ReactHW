@@ -1,0 +1,4 @@
+
+.SpanStyle::before {
+    content: "✎";
+}
