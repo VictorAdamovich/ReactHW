@@ -1,14 +1,19 @@
-import React from 'react'
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import React from 'react';
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
+import {AppStoreType} from './bll/store';
+import {useDispatch, useSelector} from 'react-redux';
+import {loadingAC} from './bll/loadingReducer';
+import c from './HW10.module.css';
 
 function HW10() {
     // useSelector, useDispatch
-    const loading = false
+    const loading = useSelector<AppStoreType, boolean>(state => state.loading.load);
+    const dispatch = useDispatch();
 
     const setLoading = () => {
-        // dispatch
-        // setTimeout
-        console.log('loading...')
+        dispatch(loadingAC());
+        setTimeout(() => dispatch(loadingAC()), 1000);
+        console.log('loading...');
     };
 
     return (
@@ -19,7 +24,7 @@ function HW10() {
             {/*should work (должно работать)*/}
             {loading
                 ? (
-                    <div>крутилка...</div>
+                    <div className={c.spinner}></div>
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
@@ -32,7 +37,7 @@ function HW10() {
             {/*<Alternative/>*/}
             <hr/>
         </div>
-    )
+    );
 }
 
-export default HW10
+export default HW10;
