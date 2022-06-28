@@ -23,4 +23,4 @@ export const loadingReducer = (state = initState, action: LoadingReducerACType):
     }
 };
 
-export const loadingAC = () => ({type: SET_LOADING}) as const; // fix any
+export const loadingAC = () => ({type: SET_LOADING})  // fix any
